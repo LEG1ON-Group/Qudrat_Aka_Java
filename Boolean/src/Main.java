@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Choose a Boolean statement to evaluate (1-35): ");
+        System.out.print("Choose (1-35): ");
         int choice = scanner.nextInt();
 
         switch (choice) {
@@ -341,7 +341,7 @@ public class Main {
                 break;
 
             case 35:
-                System.out.print("Enter the coordinates of two different points (x1, y1) and (x2, y2): ");
+                System.out.print("(x1, y1) and (x2, y2): ");
                 int x1_35 = scanner.nextInt();
                 int y1_35 = scanner.nextInt();
                 int x2_35 = scanner.nextInt();
