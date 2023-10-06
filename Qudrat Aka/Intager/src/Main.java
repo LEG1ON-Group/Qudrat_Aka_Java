@@ -22,7 +22,7 @@ public class Main {
                 int weightInMetricTons = weightInKilograms / 1000;
                 System.out.println("Weight in metric tons: " + weightInMetricTons);
                 break;
-                
+
             case 3:
                 System.out.print("Enter file size in bytes: ");
                 int fileSizeInBytes = scanner.nextInt();
