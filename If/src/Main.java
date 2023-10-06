@@ -4,30 +4,30 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the issue number (1-30):");
+        System.out.println(":");
         int issueNumber = scanner.nextInt();
 
         switch (issueNumber) {
             case 1:
-                System.out.println("Enter an integer for if1:");
+                System.out.println("if1:");
                 int if1Number = scanner.nextInt();
                 if1Number = (if1Number > 0) ? if1Number + 1 : if1Number;
-                System.out.println("Result for if1: " + if1Number);
+                System.out.println(if1Number);
                 break;
 
             case 2:
-                System.out.println("Enter an integer for if2:");
+                System.out.println("if2:");
                 int if2Number = scanner.nextInt();
                 if (if2Number > 0) {
                     if2Number++;
                 } else {
                     if2Number -= 2;
                 }
-                System.out.println("Result for if2: " + if2Number);
+                System.out.println(if2Number);
                 break;
 
             case 3:
-                System.out.println("Enter an integer for if3:");
+                System.out.println("if3:");
                 int if3Number = scanner.nextInt();
                 if (if3Number > 0) {
                     if3Number++;
@@ -36,11 +36,11 @@ public class Main {
                 } else {
                     if3Number += 10;
                 }
-                System.out.println("Result for if3: " + if3Number);
+                System.out.println(if3Number);
                 break;
 
             case 4:
-                System.out.println("Enter three integers for if4:");
+                System.out.println("if4:");
                 int if4Num1 = scanner.nextInt();
                 int if4Num2 = scanner.nextInt();
                 int if4Num3 = scanner.nextInt();
@@ -54,11 +54,11 @@ public class Main {
                 if (if4Num3 > 0) {
                     if4Count++;
                 }
-                System.out.println("Number of positive integers for if4: " + if4Count);
+                System.out.println(if4Count);
                 break;
 
             case 5:
-                System.out.println("Enter three integers for if5:");
+                System.out.println("if5:");
                 int if5Num1 = scanner.nextInt();
                 int if5Num2 = scanner.nextInt();
                 int if5Num3 = scanner.nextInt();
@@ -79,28 +79,28 @@ public class Main {
                 } else if (if5Num3 < 0) {
                     if5NegCount++;
                 }
-                System.out.println("Number of positive integers for if5: " + if5PosCount);
-                System.out.println("Number of negative integers for if5: " + if5NegCount);
+                System.out.println(if5PosCount);
+                System.out.println(if5NegCount);
                 break;
 
             case 6:
-                System.out.println("Enter two integers for if6:");
+                System.out.println("if6:");
                 int if6Num1 = scanner.nextInt();
                 int if6Num2 = scanner.nextInt();
                 int if6Max = (if6Num1 > if6Num2) ? if6Num1 : if6Num2;
-                System.out.println("Largest number for if6: " + if6Max);
+                System.out.println(if6Max);
                 break;
 
             case 7:
-                System.out.println("Enter two integers for if7:");
+                System.out.println("if7:");
                 int if7Num1 = scanner.nextInt();
                 int if7Num2 = scanner.nextInt();
                 int if7MinSeq = (if7Num1 < if7Num2) ? 1 : 2;
-                System.out.println("Sequence number of smallest number for if7: " + if7MinSeq);
+                System.out.println(if7MinSeq);
                 break;
 
             case 8:
-                System.out.println("Enter two integers for if8:");
+                System.out.println("if8:");
                 int if8Num1 = scanner.nextInt();
                 int if8Num2 = scanner.nextInt();
                 if (if8Num1 > if8Num2) {
@@ -111,7 +111,7 @@ public class Main {
                 break;
 
             case 9:
-                System.out.println("Enter real numbers A and B for if9:");
+                System.out.println("A and B for if9:");
                 double if9A = scanner.nextDouble();
                 double if9B = scanner.nextDouble();
                 if (if9A > if9B) {
@@ -123,7 +123,7 @@ public class Main {
                 break;
 
             case 10:
-                System.out.println("Enter integers A and B for if10:");
+                System.out.println("A and B for if10:");
                 int if10A = scanner.nextInt();
                 int if10B = scanner.nextInt();
                 if (if10A != if10B) {
@@ -135,7 +135,7 @@ public class Main {
                 break;
 
             case 11:
-                System.out.println("Enter integers A and B for if11:");
+                System.out.println("A and B for if11:");
                 int if11A = scanner.nextInt();
                 int if11B = scanner.nextInt();
                 if (if11A != if11B) {
@@ -147,16 +147,16 @@ public class Main {
                 break;
 
             case 12:
-                System.out.println("Enter three numbers for if12:");
+                System.out.println("if12:");
                 double if12Num1 = scanner.nextDouble();
                 double if12Num2 = scanner.nextDouble();
                 double if12Num3 = scanner.nextDouble();
                 double if12Min = Math.min(Math.min(if12Num1, if12Num2), if12Num3);
-                System.out.println("Smallest number for if12: " + if12Min);
+                System.out.println(if12Min);
                 break;
 
             case 13:
-                System.out.println("Enter three numbers for if13:");
+                System.out.println("if13:");
                 double if13Num1 = scanner.nextDouble();
                 double if13Num2 = scanner.nextDouble();
                 double if13Num3 = scanner.nextDouble();
@@ -164,35 +164,35 @@ public class Main {
                 double if13Max = Math.max(Math.max(if13Num1, if13Num2), if13Num3);
                 double if13Min = Math.min(Math.min(if13Num1, if13Num2), if13Num3);
                 double if13Average = (if13Sum - if13Max - if13Min) / 1.0;
-                System.out.println("Average of the numbers for if13: " + if13Average);
+                System.out.println(if13Average);
                 break;
 
             case 14:
-                System.out.println("Enter three numbers for if14:");
+                System.out.println("if14:");
                 double if14Num1 = scanner.nextDouble();
                 double if14Num2 = scanner.nextDouble();
                 double if14Num3 = scanner.nextDouble();
                 double if14Min = Math.min(Math.min(if14Num1, if14Num2), if14Num3);
                 double if14Max = Math.max(Math.max(if14Num1, if14Num2), if14Num3);
-                System.out.println("Numbers in order for if14: " + if14Min + ", " + if14Max);
+                System.out.println(if14Min + ", " + if14Max);
                 break;
 
             case 15:
-                System.out.println("Enter three numbers for if15:");
+                System.out.println("if15:");
                 int if15Num1 = scanner.nextInt();
                 int if15Num2 = scanner.nextInt();
                 int if15Num3 = scanner.nextInt();
                 if ((if15Num1 + if15Num2) > (if15Num1 + if15Num3) && (if15Num1 + if15Num2) > (if15Num2 + if15Num3)) {
-                    System.out.println("Numbers with the largest sum: " + if15Num1 + " and " + if15Num2);
+                    System.out.println(if15Num1 + " and " + if15Num2);
                 } else if ((if15Num1 + if15Num3) > (if15Num1 + if15Num2) && (if15Num1 + if15Num3) > (if15Num2 + if15Num3)) {
-                    System.out.println("Numbers with the largest sum: " + if15Num1 + " and " + if15Num3);
+                    System.out.println(if15Num1 + " and " + if15Num3);
                 } else {
-                    System.out.println("Numbers with the largest sum: " + if15Num2 + " and " + if15Num3);
+                    System.out.println(if15Num2 + " and " + if15Num3);
                 }
                 break;
 
             case 16:
-                System.out.println("Enter real numbers A, B, and C for if16:");
+                System.out.println("A, B, and C for if16:");
                 double if16A = scanner.nextDouble();
                 double if16B = scanner.nextDouble();
                 double if16C = scanner.nextDouble();
@@ -209,7 +209,7 @@ public class Main {
                 break;
 
             case 17:
-                System.out.println("Enter real numbers A, B, and C for if17:");
+                System.out.println("A, B, and C for if17:");
                 double if17A = scanner.nextDouble();
                 double if17B = scanner.nextDouble();
                 double if17C = scanner.nextDouble();
@@ -226,38 +226,38 @@ public class Main {
                 break;
 
             case 18:
-                System.out.println("Enter three integers for if18:");
+                System.out.println("if18:");
                 int if18Num1 = scanner.nextInt();
                 int if18Num2 = scanner.nextInt();
                 int if18Num3 = scanner.nextInt();
                 if (if18Num1 == if18Num2) {
-                    System.out.println("Order number of the remaining number: 3");
+                    System.out.println("3");
                 } else if (if18Num2 == if18Num3) {
-                    System.out.println("Order number of the remaining number: 1");
+                    System.out.println("1");
                 } else {
-                    System.out.println("Order number of the remaining number: 2");
+                    System.out.println("2");
                 }
                 break;
 
             case 19:
-                System.out.println("Enter four integers for if19:");
+                System.out.println("if19:");
                 int if19Num1 = scanner.nextInt();
                 int if19Num2 = scanner.nextInt();
                 int if19Num3 = scanner.nextInt();
                 int if19Num4 = scanner.nextInt();
                 if (if19Num1 == if19Num2 && if19Num1 == if19Num3) {
-                    System.out.println("Order number of the remaining number: 4");
+                    System.out.println("4");
                 } else if (if19Num2 == if19Num3 && if19Num2 == if19Num4) {
-                    System.out.println("Order number of the remaining number: 1");
+                    System.out.println("1");
                 } else if (if19Num1 == if19Num3 && if19Num1 == if19Num4) {
-                    System.out.println("Order number of the remaining number: 2");
+                    System.out.println("2");
                 } else {
-                    System.out.println("Order number of the remaining number: 3");
+                    System.out.println("3");
                 }
                 break;
 
             case 20:
-                System.out.println("Enter three points A, B, and C on the number axis for if20:");
+                System.out.println("A, B, and C for if20:");
                 double if20A = scanner.nextDouble();
                 double if20B = scanner.nextDouble();
                 double if20C = scanner.nextDouble();
@@ -265,12 +265,12 @@ public class Main {
                 double distanceAC = Math.abs(if20A - if20C);
                 double distanceBC = Math.abs(if20B - if20C);
                 double minDistance = Math.min(Math.min(distanceAB, distanceAC), distanceBC);
-                System.out.println("Closest point to point A: " + ((minDistance == distanceAB) ? "B" : (minDistance == distanceAC) ? "C" : "B"));
+                System.out.println("A: " + ((minDistance == distanceAB) ? "B" : (minDistance == distanceAC) ? "C" : "B"));
                 System.out.println("Distance between point A and the closest point: " + minDistance);
                 break;
 
             case 21:
-                System.out.println("Enter an integer for if21:");
+                System.out.println("if21:");
                 int if21Number = scanner.nextInt();
                 if (if21Number == 0) {
                     System.out.println("Output: 0");
@@ -290,7 +290,7 @@ public class Main {
                 break;
 
             case 22:
-                System.out.println("Enter a point (x, y) not lying on the coordinate axes for if22:");
+                System.out.println("x and y for if22:");
                 double if22X = scanner.nextDouble();
                 double if22Y = scanner.nextDouble();
                 if (if22X > 0 && if22Y > 0) {
@@ -305,7 +305,7 @@ public class Main {
                 break;
 
             case 23:
-                System.out.println("Enter three ends of a rectangle parallel to the coordinate axes (x1, y1), (x2, y2), (x3, y3) for if23:");
+                System.out.println("(x1, y1), (x2, y2), (x3, y3) for if23:");
                 double x1 = scanner.nextDouble();
                 double y1 = scanner.nextDouble();
                 double x2 = scanner.nextDouble();
@@ -334,7 +334,7 @@ public class Main {
                 break;
 
             case 24:
-                System.out.println("Enter a real number x for if24:");
+                System.out.println("x for if24:");
                 double if24X = scanner.nextDouble();
                 double if24Result;
                 if (if24X > 0) {
@@ -342,11 +342,11 @@ public class Main {
                 } else {
                     if24Result = if24X - 6;
                 }
-                System.out.println("Result for if24: " + if24Result);
+                System.out.println(if24Result);
                 break;
 
             case 25:
-                System.out.println("Enter a real number x for if25:");
+                System.out.println("x for if25:");
                 double if25X = scanner.nextDouble();
                 double if25Result;
                 if (if25X < -2 || if25X > 2) {
@@ -354,11 +354,11 @@ public class Main {
                 } else {
                     if25Result = -3 * if25X;
                 }
-                System.out.println("Result for if25: " + if25Result);
+                System.out.println(if25Result);
                 break;
 
             case 26:
-                System.out.println("Enter a real number x for if26:");
+                System.out.println("x for if26:");
                 double if26X = scanner.nextDouble();
                 double if26Result;
                 if (if26X <= 0) {
@@ -368,11 +368,11 @@ public class Main {
                 } else {
                     if26Result = 4;
                 }
-                System.out.println("Result for if26: " + if26Result);
+                System.out.println(if26Result);
                 break;
 
             case 27:
-                System.out.println("Enter a real number x for if27:");
+                System.out.println("x for if27:");
                 double if27X = scanner.nextDouble();
                 double if27Result;
                 if (if27X < 0) {
@@ -384,11 +384,11 @@ public class Main {
                 } else {
                     if27Result = 0;
                 }
-                System.out.println("Result for if27: " + if27Result);
+                System.out.println(if27Result);
                 break;
 
             case 28:
-                System.out.println("Enter a positive integer year for if28:");
+                System.out.println("Year for if28:");
                 int if28Year = scanner.nextInt();
                 int if28Days;
                 if ((if28Year % 4 == 0 && if28Year % 100 != 0) || (if28Year % 400 == 0)) {
@@ -400,19 +400,19 @@ public class Main {
                 break;
 
             case 29:
-                System.out.println("Enter an integer for if29:");
+                System.out.println("if29:");
                 int if29Number = scanner.nextInt();
                 if (if29Number > 0) {
                     if (if29Number % 2 == 0) {
-                        System.out.println("Positive even number");
+                        System.out.println("Musbat juft son");
                     } else {
-                        System.out.println("Positive odd number");
+                        System.out.println("Musbat toq raqam");
                     }
                 } else if (if29Number < 0) {
                     if (if29Number % 2 == 0) {
-                        System.out.println("Negative even number");
+                        System.out.println("Manfiy juft son");
                     } else {
-                        System.out.println("Negative odd number");
+                        System.out.println("Manfiy toq raqam");
                     }
                 } else {
                     System.out.println("Number is equal to zero");
@@ -420,7 +420,7 @@ public class Main {
                 break;
 
             case 30:
-                System.out.println("Enter a number from 1 to 999 for if30:");
+                System.out.println("if30:");
                 int if30Number = scanner.nextInt();
                 String if30Result = "";
 
@@ -438,7 +438,7 @@ public class Main {
                     if30Result += "odd number";
                 }
 
-                System.out.println("Result for if30: " + if30Result);
+                System.out.println(if30Result);
                 break;
 
             default:
